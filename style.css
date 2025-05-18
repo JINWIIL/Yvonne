@@ -1,0 +1,375 @@
+/* Hello this is the universal layout style😒😁*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Hello this is the html layout 😁😁*/
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+/* hello this is the color part bg for backgroung,
+ sec -bg for another background and
+ main- color for buttons,, hover effects last text-color for texts*/
+:root{
+    --bg-color:#080808;
+    --sec-bg-co:#001005;
+    --text-co:#ffffff;
+    --main-co:#da0cda;
+
+}
+/* body layout style*/
+body{
+    background: var(--bg-color);
+    color: var(--text-co);
+}
+
+/* Ssup here is now the navgation layout part starts
+ much love from Onginjo😁😁😁*/
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 4rem 12%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+#menu-icon{
+    font-size: 3rem;
+    color: var(--main-co);
+    display: none;
+}
+#menu-icon:hover{
+    cursor: pointer;
+}
+#menu-x{
+    font-size: 3rem;
+    color: var(--main-co);
+    display: none;
+}
+.logo{
+    font-size: 3rem;
+    color: var(--text-co);
+    cursor: pointer;
+    font-weight: 800;
+    transition: .3s ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+span{
+    color:var(--main-co)
+}
+.navbar a{
+    font-size:1.8rem;
+    color: var(--text-co);
+    margin-left: 4rem;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: .3s ease;
+}
+.navbar a:hover{
+    border-bottom: 3px solid var(--main-co);
+    color:var(--main-co)
+}
+/* my friend this is the  home section😁😁😁*/
+
+section{
+    min-height:100vh;
+  padding: 10rem 12%;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12rem;
+}
+.home_con{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    margin-top: 5rem;
+}
+.home_con h1{
+    font-size: 6rem;
+    font-weight: 700;
+    margin-top: 1.8rem;
+    line-height: 1;
+}
+.home_con h3{
+    font-size: 4rem;
+    margin: 1rem 0;
+}
+.home_con p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+}
+.home_image img{
+    width: 32vw;
+    border-radius: 50%;
+    margin-top: 6rem;
+    
+    box-shadow: 0 0 25px var(--main-co);
+    transition: .4s ease;
+}
+.home_image img:hover{
+    box-shadow: 0 0 25px var(--main-co) ,
+                0 0 50px var(--main-co);
+}
+.social_icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: .6rem;
+    background: transparent;
+    border: 2px solid var(--main-co);
+    border-radius: 50%;
+    color: var(--main-co);
+    margin: 2rem .5rem;
+    transition: .3s ease;
+}
+.social_icons a:hover{
+    color: var(--text-co);
+    background: var(--main-co);
+    transform: scale(1.2) translateY(-5px);
+    box-shadow: 0 0 25px var(--main-co);
+}
+.btn_grop{
+    display: flex;
+    gap: 1.5rem;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: var(--main-co);
+    box-shadow: 0 0 25px var(--main-co);
+    border-radius: 3rem;
+    font-size: 1.8rem;
+    color: black;
+    border: 2px solid transparent;
+    font-weight: 600;
+    transition: .3s ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-co) ,
+                0 0 50px var(--main-co);
+}
+#btnb{
+    background: black;
+    color: var(--main-co);
+    border: 2px solid var(--main-co);
+    box-shadow: 0 0 25px transparent;
+}
+#btnb:hover{
+      box-shadow: 0 0 25px var(--main-co);
+}
+/*about section 😁😁*/
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    background: var(--sec-bg-co);
+    
+}
+.about_img img{
+    width: 32vw;
+    border-radius: 35%;
+    box-shadow: 0 0 25px var(--main-co);
+    transition: .4s ease-in-out;
+    margin-top: 8rem;
+}
+.about_img img:hover{
+    box-shadow: 0 0 25px var(--main-co),
+                0 0 50px var(--main-co);
+}
+.about_con{
+    margin-top: 9rem;
+}
+.about_con h2{
+     font-size: 7rem;
+     text-align: left;
+}
+.about_con p{
+    font-size: 1.8rem;
+}
+.about_con .btn{
+     margin: 3rem 0;
+}
+.heading{
+    text-align: center;
+    font-size: 7rem;
+    margin: 2rem 0;
+}
+/*this is the services section layout style 😁😁*/
+.services{
+    background-color: var(--bg-color);
+    color: black;
+}
+.services h2{
+    color: var(--text-co);
+}
+.services_container{
+    display: grid;
+   grid-template-columns: repeat(auto-fit , minmax(300px , 1fr));
+   align-items: center;
+    gap: 2.5rem;
+}
+.services_bobo{
+    display: flex;
+    background-color: var(--main-co);
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: .4s ease-in-out;
+}
+.services_bobo:hover{
+    background-color: var(--sec-bg-co);
+    color: var(--main-co);
+    border: 5px solid var(--main-co);
+    transform: scale(1.03);
+}
+.services_info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+.services_info i{
+    font-size: 5rem;
+}
+.services_info h4{
+    font-size: 3rem;
+    margin: 2rem 0;
+    font-weight: 800;
+}
+.services_info p{
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+/* this is the contact section layout style 😁😁*/
+.contact{
+    background: var(--sec-bg-co);
+}
+.contact h2{
+    margin-top: 3rem;
+    color: var(--text-co);
+}
+.contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+.contact form .input_box input,
+.contact form textarea{
+      width: 100%;
+      padding: 2.5rem;
+      font-size: 1.8rem;
+      color: var(--main-co);
+      background: var(--bg-color);
+      border-radius: 2rem;
+      border: 2px solid var(--main-co);
+      margin: 1rem;
+      resize: none;
+}
+.footer{
+    background-color: var(--bg-color);
+    padding: 30px 0;
+}
+.footer .social_icons{
+    text-align: center;
+   
+}
+.footer .copyright{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* this is a responsive layout style // its when you open this 
+website in a phone it will be aligned in a cute way😁😁😎*/
+
+@media(max-width:900px){
+    #menu-icon{
+        display: block;
+    }
+    #menu-x{
+        display: none;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3rem;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-left: 2px solid var(--main-co);
+        border-bottom: 2px solid var(--main-co);
+        border-bottom-left-radius: 2rem;
+        display: none;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: var(--text-co);
+    }
+    .navbar.active{
+        display: block;
+    }
+    .home{
+        flex-direction: column-reverse;
+        margin: 3rem 0;
+        gap: 2rem;
+    }
+    .home_con{
+        align-items: center;
+        text-align: center;
+    }
+    .home_image img{
+        width: 59vw;
+    }
+    .about{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .about h2{
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .about_img img{
+ width:52vw;
+
+    }
+    .contact form{
+        flex-direction: column;
+    }
+}
